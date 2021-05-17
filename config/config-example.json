@@ -1,0 +1,26 @@
+{
+  "development": {
+    "username": "username",
+    "password": "password",
+    "database": "teste_sequelize",
+    "host": "hostname",
+    "dialect": "postgres",
+    "port": 5432
+  },
+  "test": {
+    "username": "username",
+    "password": "password",
+    "database": "teste_sequelize",
+    "host": "hostname",
+    "dialect": "postgres",
+    "port": 5432
+  },
+  "production": {
+    "username": "username",
+    "password": "password",
+    "database": "teste_sequelize",
+    "host": "hostname",
+    "dialect": "postgres",
+    "port": 5432
+  }
+}
