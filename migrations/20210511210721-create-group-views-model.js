@@ -14,11 +14,10 @@ module.exports = {
           model: {
             schema: 'public',
             tableName: 'groups',
-            hooks: true,
-            onDelete: 'CASCADE'
           },
           key: 'id',
-        }
+        },
+        onDelete: 'CASCADE',
       },
       view_id: {
         type: Sequelize.INTEGER,
@@ -27,10 +26,10 @@ module.exports = {
           model: {
             schema: 'public',
             tableName: 'views',
-            onDelete: 'SET NULL'
           },
           key: 'id',
-        }
+        },
+        onDelete: 'SET NULL',
       },
       created_at: {
         allowNull: false,

@@ -10,16 +10,16 @@ module.exports = (sequelize, DataTypes) => {
      * The `models/index` file will call this method automatically.
      */
     static associate(models) {
-      console.log('>>: ', models);
-      const { Group } = models;
-      this.belongsToMany(Group, {
-        through: 'rel_group_view',
-        as: 'viewGroups',
-        hooks: true,
-        onDelete: 'SET NULL',
-        primaryKey: 'view_id'
-      })
-      // define association here
+      // console.log('>>: ', models);
+      // const { Group } = models;
+      // this.hasMany(Group, {
+      //   through: 'rel_group_view',
+      //   as: 'viewGroups',
+      //   hooks: true,
+      //   onDelete: 'SET NULL',
+      //   primaryKey: 'view_id'
+      // })
+      // // define association here
     }
   };
   views.init({

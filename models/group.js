@@ -15,9 +15,7 @@ module.exports = (sequelize, DataTypes) => {
       this.belongsToMany(views, {
         through: 'rel_group_view',
         as: 'groupViews',
-        onDelete: 'cascade',
-        hooks: true,
-        primaryKey: 'group_id'
+        foreignKey: 'group_id'
       })
       // define association here
     }

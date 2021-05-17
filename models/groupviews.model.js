@@ -16,7 +16,9 @@ module.exports = (sequelize, DataTypes) => {
       references: {
         model: Group,
         key: 'id',
-      }, 
+      },
+      // hooks: true,
+      // onDelete: 'CASCADE'
     },
     view_id: {
       type: DataTypes.INTEGER
